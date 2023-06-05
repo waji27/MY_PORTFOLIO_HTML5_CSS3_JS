@@ -108,7 +108,7 @@ header h1 {
 #skills-bar .html-skill-val {
     height: 5px;
     width: 750px;
-    background-color: grey;
+    background-color: #27242dac;
 }
 
 #skills-bar .css-skill {
@@ -121,7 +121,7 @@ header h1 {
 #skills-bar .css-skill-val {
     height: 5px;
     width: 730px;
-    background-color: grey;
+    background-color: #27242dac;
 }
 
 #skills-bar .javascript-skill {
@@ -134,7 +134,7 @@ header h1 {
 #skills-bar .javascript-skill-val {
     height: 5px;
     width: 550px;
-    background-color: grey;
+    background-color: #27242dac;
 }
 
 #skills-bar .php-skill {
@@ -147,7 +147,7 @@ header h1 {
 #skills-bar .php-skill-val {
     height: 5px;
     width: 300px;
-    background-color: grey;
+    background-color: #27242dac;
 }
 
 #skills-bar .react-skill {
@@ -160,7 +160,7 @@ header h1 {
 #skills-bar .react-skill-val {
     height: 5px;
     width: 300px;
-    background-color: grey;
+    background-color: #27242dac;
 }
 
 /* .......................................................................... */
@@ -175,13 +175,14 @@ header h1 {
 }
 
 #projects-bar h2 {
+    margin: 20px auto 10px auto;
     font-size: 30px;
     color: white;
     border-bottom: 2px solid white;
 }
 
 #projects-bar .cards {
-    border: 2px solid white;
+    /* border: 2px solid white; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -228,6 +229,35 @@ header h1 {
     border: 2px solid white;
     height: 90px;
     margin: 10px;
+}
+
+/* ........................................................................... */
+
+#contact-bar {
+    margin-left: 12vw;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-bar h2 {
+    color: white;
+    border-bottom: 2px solid white;
+    margin: 20px auto 20px auto;
+    font-size: 30px;
+}
+
+#contact-bar h5 {
+    color: white;
+    margin: 20px auto 5px auto;
+    font-size: 15px;
+}
+
+#contact-bar p {
+    color: grey;
+    font-size: 10px;
 }
 
 
