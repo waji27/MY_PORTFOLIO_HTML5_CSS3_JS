@@ -91,6 +91,7 @@ header h1 {
     color: white;
     border-bottom: 2px solid white;
     margin: 20px auto 20px auto;
+    font-size: 30px;
 }
 
 #skills-bar h3 {
@@ -163,4 +164,70 @@ header h1 {
 }
 
 /* .......................................................................... */
+
+#projects-bar {
+    margin-left: 12vw;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects-bar h2 {
+    font-size: 30px;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+#projects-bar .cards {
+    border: 2px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects-bar .cards .card-1{
+    height: 200px;
+    width: 200px;
+    border: 2px solid white;
+    margin: 30px;
+    color: white;
+}
+
+#projects-bar .cards .card-1 .card-1-image {
+    border: 2px solid white;
+    height: 90px;
+    margin: 10px;
+}
+
+#projects-bar .cards .card-2{
+    height: 200px;
+    width: 200px;
+    border: 2px solid white;
+    margin: 30px;
+    color: white;
+}
+
+#projects-bar .cards .card-2 .card-2-image {
+    border: 2px solid white;
+    height: 90px;
+    margin: 10px;
+}
+
+#projects-bar .cards .card-3{
+    height: 200px;
+    width: 200px;
+    border: 2px solid white;
+    margin: 30px;
+    color: white;
+}
+
+#projects-bar .cards .card-3 .card-3-image {
+    border: 2px solid white;
+    height: 90px;
+    margin: 10px;
+}
+
 
