@@ -42,7 +42,7 @@ nav ul a:hover{
 
 header {
     background-image: url(main-image.jpeg);
-    width: 88vw;
+    width: 85vw;
     height: 100vh;
     margin-left: 12vw;
     display: flex;
@@ -53,6 +53,13 @@ header h1 {
     margin-top: 10px;
     color: white;
     font-size: 50px;
+    animation: dullbright 2s infinite;
+}
+
+@keyframes dullbright {
+    0% {opacity: 1;}
+    50% {opacity: 0.8;}
+    100% {opacity: 1;}
 }
 
 /* .......................................................................... */
@@ -103,6 +110,7 @@ header h1 {
     width: 800px;
     background-color: white;
     margin: 5px auto 20px auto;
+    border-radius: 10px;
 }
 
 #skills-bar .html-skill-val {
@@ -116,6 +124,7 @@ header h1 {
     width: 800px;
     background-color: white;
     margin: 5px auto 20px auto;
+    border-radius: 10px;
 }
 
 #skills-bar .css-skill-val {
@@ -129,6 +138,7 @@ header h1 {
     width: 800px;
     background-color: white;
     margin: 5px auto 20px auto;
+    border-radius: 10px;
 }
 
 #skills-bar .javascript-skill-val {
@@ -142,6 +152,7 @@ header h1 {
     width: 800px;
     background-color: white;
     margin: 5px auto 20px auto;
+    border-radius: 10px;
 }
 
 #skills-bar .php-skill-val {
@@ -155,6 +166,7 @@ header h1 {
     width: 800px;
     background-color: white;
     margin: 5px auto 20px auto;
+    border-radius: 10px;
 }
 
 #skills-bar .react-skill-val {
@@ -163,11 +175,25 @@ header h1 {
     background-color: #27242dac;
 }
 
+#skills-bar .english-skill{
+    height: 5px;
+    width: 800px;
+    background-color: white;
+    margin: 5px auto 20px auto;
+    border-radius: 10px;
+}
+
+#skills-bar .english-skill-val {
+    height: 5px;
+    width: 650px;
+    background-color: #27242dac;
+}
+
 /* .......................................................................... */
 
 #projects-bar {
     margin-left: 12vw;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -235,7 +261,7 @@ header h1 {
 
 #contact-bar {
     margin-left: 12vw;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -260,4 +286,28 @@ header h1 {
     font-size: 10px;
 }
 
+#contact-bar form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-bar form input {
+    background: transparent;
+    margin: 20px;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    outline: none;
+}
+
+#submit-button{
+    border: 2px solid white !important;
+    padding: 10px;
+}
+
+#submit-button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
 
