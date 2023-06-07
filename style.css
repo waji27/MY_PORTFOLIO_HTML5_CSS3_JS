@@ -82,6 +82,7 @@ header h1 {
 #about-bar p {
     color: white;
     margin: 2em;
+    text-align: center;
 }
 
 /* .......................................................................... */
@@ -201,7 +202,7 @@ header h1 {
 }
 
 #projects-bar h2 {
-    margin: 20px auto 10px auto;
+    margin: 20px auto 30px auto;
     font-size: 30px;
     color: white;
     border-bottom: 2px solid white;
@@ -213,48 +214,82 @@ header h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-#projects-bar .cards .card-1{
+#projects-bar .cards a {
+display: inline;
+    text-decoration: none;
+}
+
+#projects-bar .cards a .card-1{
     height: 200px;
     width: 200px;
     border: 2px solid white;
-    margin: 30px;
     color: white;
 }
 
-#projects-bar .cards .card-1 .card-1-image {
+#projects-bar .cards a .card-1 p {
+    padding: 5px;
+    text-align: center;
+}
+
+#projects-bar .cards a .card-1 h5 {
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+#projects-bar .cards a .card-1 .card-1-image {
     border: 2px solid white;
     height: 90px;
     margin: 10px;
 }
 
-#projects-bar .cards .card-2{
+#projects-bar .cards a .card-2{
     height: 200px;
     width: 200px;
     border: 2px solid white;
-    margin: 30px;
     color: white;
 }
 
-#projects-bar .cards .card-2 .card-2-image {
+#projects-bar .cards a .card-2 .card-2-image {
     border: 2px solid white;
     height: 90px;
     margin: 10px;
 }
 
-#projects-bar .cards .card-3{
+#projects-bar .cards a .card-2 h5 {
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+#projects-bar .cards a .card-2 p {
+    padding: 5px;
+    text-align: center;
+}
+
+#projects-bar .cards a .card-3{
     height: 200px;
     width: 200px;
     border: 2px solid white;
-    margin: 30px;
     color: white;
 }
 
-#projects-bar .cards .card-3 .card-3-image {
+#projects-bar .cards a .card-3 .card-3-image {
     border: 2px solid white;
     height: 90px;
     margin: 10px;
+}
+
+#projects-bar .cards a .card-3 h5 {
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+#projects-bar .cards a .card-3 p {
+    padding: 5px;
+    text-align: center;
 }
 
 /* ........................................................................... */
@@ -271,7 +306,7 @@ header h1 {
 #contact-bar h2 {
     color: white;
     border-bottom: 2px solid white;
-    margin: 20px auto 20px auto;
+    margin: 50px auto 20px auto;
     font-size: 30px;
 }
 
