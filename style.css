@@ -26,15 +26,15 @@ nav ul {
 
 nav ul a {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
     text-decoration: none;
-    padding: 20px ;
+    padding: 20px;
 }
 
-nav ul a:hover{
+nav ul a:hover {
     background-color: black;
 }
 
@@ -62,9 +62,17 @@ header h6 {
 }
 
 @keyframes dullbright {
-    0% {opacity: 1;}
-    50% {opacity: 0.5;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /* .......................................................................... */
@@ -181,7 +189,7 @@ header h6 {
     background-color: #27242dac;
 }
 
-#skills-bar .english-skill{
+#skills-bar .english-skill {
     height: 5px;
     width: 800px;
     background-color: white;
@@ -195,7 +203,7 @@ header h6 {
     background-color: #27242dac;
 }
 
-#resume-button{
+#resume-button {
     border: 2px solid white !important;
     padding: 10px;
     background: transparent;
@@ -238,11 +246,11 @@ header h6 {
 }
 
 #projects-bar .cards a {
-display: inline;
+    display: inline;
     text-decoration: none;
 }
 
-#projects-bar .cards a .card-1{
+#projects-bar .cards a .card-1 {
     height: 200px;
     width: 200px;
     border: 2px solid white;
@@ -265,7 +273,7 @@ display: inline;
     margin: 10px;
 }
 
-#projects-bar .cards a .card-2{
+#projects-bar .cards a .card-2 {
     height: 200px;
     width: 200px;
     border: 2px solid white;
@@ -288,7 +296,7 @@ display: inline;
     text-align: center;
 }
 
-#projects-bar .cards a .card-3{
+#projects-bar .cards a .card-3 {
     height: 200px;
     width: 200px;
     border: 2px solid white;
@@ -313,13 +321,21 @@ display: inline;
 
 /* ........................................................................... */
 
-#my-team-bar{
+#my-team-bar {
     margin-left: 12vw;
     /* border: 2px solid white; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.team-members {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #my-team-bar h2 {
@@ -329,7 +345,7 @@ display: inline;
     font-size: 30px;
 }
 
-.ali{
+.ali {
     height: 200px;
     width: 300px;
     /* border: 2px solid white; */
@@ -340,14 +356,14 @@ display: inline;
     gap: 10px;
 }
 
-.ali-image{
+.ali-image {
     height: 80px;
     width: 80px;
     border: 1px solid white;
     border-radius: 50%;
 }
 
-.ali-descrp{
+.ali-descrp {
     height: 80px;
     width: 200px;
     /* border: 1px solid white; */
@@ -374,14 +390,14 @@ display: inline;
     gap: 10px;
 }
 
-.tawab-image{
+.tawab-image {
     height: 80px;
     width: 80px;
     border: 1px solid white;
     border-radius: 50%;
 }
 
-.tawab-descrp{
+.tawab-descrp {
     height: 80px;
     width: 200px;
     /* border: 1px solid white; */
@@ -408,14 +424,14 @@ display: inline;
     gap: 10px;
 }
 
-.shehzad-image{
+.shehzad-image {
     height: 80px;
     width: 80px;
     border: 1px solid white;
     border-radius: 50%;
 }
 
-.shehzad-descrp{
+.shehzad-descrp {
     height: 80px;
     width: 200px;
     /* border: 1px solid white; */
@@ -474,7 +490,7 @@ display: inline;
     outline: none;
 }
 
-#submit-button{
+#submit-button {
     border: 2px solid white !important;
     padding: 10px;
 }
@@ -485,3 +501,120 @@ display: inline;
     cursor: pointer;
 }
 
+@media screen and (max-width: 767px) {
+    nav {
+        display: none;
+    }
+
+    header {
+        background: url(main-image.jpeg) no-repeat center top;
+        height: 70vh;
+        width: 100vw;
+        margin-left: 0%;
+    }
+
+    #about-bar {
+        margin-left: 0%;
+    }
+
+    #skills-bar {
+        margin-left: 0%;
+    }
+
+    #skills-bar .html-skill {
+        height: 5px;
+        width: 300px;
+        background-color: white;
+        margin: 5px auto 20px auto;
+        border-radius: 10px;
+    }
+
+    #skills-bar .html-skill-val {
+        height: 5px;
+        width: 90%;
+        background-color: #27242dac;
+    }
+
+    #skills-bar .css-skill {
+        height: 5px;
+        width: 300px;
+        background-color: white;
+        margin: 5px auto 20px auto;
+        border-radius: 10px;
+    }
+
+    #skills-bar .css-skill-val {
+        height: 5px;
+        width: 73%;
+        background-color: #27242dac;
+    }
+
+    #skills-bar .javascript-skill {
+        height: 5px;
+        width: 300px;
+        background-color: white;
+        margin: 5px auto 20px auto;
+        border-radius: 10px;
+    }
+
+    #skills-bar .javascript-skill-val {
+        height: 5px;
+        width: 30%;
+        background-color: #27242dac;
+    }
+
+    #skills-bar .php-skill {
+        height: 5px;
+        width: 300px;
+        background-color: white;
+        margin: 5px auto 20px auto;
+        border-radius: 10px;
+    }
+
+    #skills-bar .php-skill-val {
+        height: 5px;
+        width: 300px;
+        background-color: #27242dac;
+    }
+
+    #skills-bar .react-skill {
+        height: 5px;
+        width: 300px;
+        background-color: white;
+        margin: 5px auto 20px auto;
+        border-radius: 10px;
+    }
+
+    #skills-bar .react-skill-val {
+        height: 5px;
+        width: 30%;
+        background-color: #27242dac;
+    }
+
+    #skills-bar .english-skill {
+        height: 5px;
+        width: 300px;
+        background-color: white;
+        margin: 5px auto 20px auto;
+        border-radius: 10px;
+    }
+
+    #skills-bar .english-skill-val {
+        height: 5px;
+        width: 80%;
+        background-color: #27242dac;
+    }
+
+    #projects-bar {
+        margin-left: 0%;
+    }
+
+    #my-team-bar {
+        margin-left: 0%;
+    }
+
+    #contact-bar {
+        margin-left: 0%;
+    }
+
+}
