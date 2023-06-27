@@ -501,6 +501,12 @@ header h6 {
     cursor: pointer;
 }
 
+.phone-nav{
+    display: none;
+}
+
+/* .......................................................................... */
+
 @media screen and (max-width: 767px) {
     nav {
         display: none;
@@ -615,6 +621,79 @@ header h6 {
 
     #contact-bar {
         margin-left: 0%;
+    }
+
+    /* ...................phone nav ..................... */
+
+    .phone-nav {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        padding: 20px;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    .phone-nav input {
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        opacity: 0%;
+        margin-top: -40px;
+    }
+
+    .phone-nav span {
+        height: 2px;
+        width: 32px;
+        margin: 3px;
+        background: white;
+        transition: 0.5s;
+    }
+
+    .phone-nav-menu {
+        padding: 0%;
+        width: 0%;
+        overflow: hidden;
+        display: flex;
+        transition: 0.5%;
+    }
+
+    .phone-nav input:checked~ span:nth-child(2){
+        transform: rotate(45deg);
+    }
+
+    .phone-nav input:checked~ span:nth-child(3){
+        transform: rotate(-45deg);
+        margin-top: -5px;
+    }
+
+    .phone-nav input:checked~ span:nth-child(4){
+        display: none;
+    }
+
+    .phone-nav input:checked~.phone-nav-menu {
+        margin-top: 2em;
+        width: 400px;
+        /* border: 2px solid white; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .phone-nav-menu a {
+        margin: 0px 10px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .phone-nav-menu a:hover {
+        background-color: white;
+        color: black;
+        cursor: pointer;
     }
 
 }
