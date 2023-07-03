@@ -258,7 +258,7 @@ header h6 {
 }
 
 #projects-bar .cards a .card-1 p {
-    padding: 5px;
+    padding: 0.5em;
     text-align: center;
 }
 
@@ -292,7 +292,7 @@ header h6 {
 }
 
 #projects-bar .cards a .card-2 p {
-    padding: 5px;
+    padding: 0.5em;
     text-align: center;
 }
 
@@ -315,7 +315,7 @@ header h6 {
 }
 
 #projects-bar .cards a .card-3 p {
-    padding: 5px;
+    padding: 0.5em;
     text-align: center;
 }
 
@@ -642,7 +642,6 @@ header h6 {
         width: 40px;
         cursor: pointer;
         opacity: 0%;
-        margin-top: -40px;
     }
 
     .phone-nav span {
@@ -651,6 +650,10 @@ header h6 {
         margin: 3px;
         background: white;
         transition: 0.5s;
+    }
+
+    .phone-nav span:nth-child(2){
+        margin-top: -30px;
     }
 
     .phone-nav-menu {
