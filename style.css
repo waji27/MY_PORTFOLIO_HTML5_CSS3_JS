@@ -41,7 +41,7 @@ nav ul a:hover {
 /* .......................................................................... */
 
 header {
-    background: url(main-image.jpeg) no-repeat right top;
+    background: url(/images/main-image.jpeg) no-repeat right top;
     width: 85vw;
     height: 100vh;
     margin-left: 12vw;
@@ -208,6 +208,7 @@ header h6 {
     padding: 10px;
     background: transparent;
     color: white;
+    text-decoration: none;
 }
 
 #resume-button:hover {
@@ -268,9 +269,13 @@ header h6 {
 }
 
 #projects-bar .cards a .card-1 .card-1-image {
-    border: 2px solid white;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 90px;
     margin: 10px;
+    background-color: white;
 }
 
 #projects-bar .cards a .card-2 {
@@ -363,6 +368,10 @@ header h6 {
     border-radius: 50%;
 }
 
+.ali-image img {
+    border-radius: 50%;
+}
+
 .ali-descrp {
     height: 80px;
     width: 200px;
@@ -397,6 +406,10 @@ header h6 {
     border-radius: 50%;
 }
 
+.tawab-image img {
+    border-radius: 50%;
+}
+
 .tawab-descrp {
     height: 80px;
     width: 200px;
@@ -428,6 +441,10 @@ header h6 {
     height: 80px;
     width: 80px;
     border: 1px solid white;
+    border-radius: 50%;
+}
+
+.shehzad-image img {
     border-radius: 50%;
 }
 
@@ -613,6 +630,18 @@ header h6 {
 
     #projects-bar {
         margin-left: 0%;
+    }
+
+    #projects-bar .cards a .card-1 p {
+        padding: 0.5em;
+    }
+
+    #projects-bar .cards a .card-2 p {
+        padding: 0.5em;
+    }
+
+    #projects-bar .cards a .card-3 p {
+        padding: 0.5em;
     }
 
     #my-team-bar {
