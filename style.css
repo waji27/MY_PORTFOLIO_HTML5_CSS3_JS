@@ -530,7 +530,7 @@ header h6 {
     }
 
     header {
-        background: url(main-image.jpeg) no-repeat center top;
+        background: url(/images/main-image.jpeg) no-repeat center top;
         height: 70vh;
         width: 100vw;
         margin-left: 0%;
