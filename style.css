@@ -632,6 +632,10 @@ header h6 {
         margin-left: 0%;
     }
 
+    #projects-bar .cards {
+        flex-direction: column;
+    }
+
     #projects-bar .cards a .card-1 p {
         padding: 0%;
     }
