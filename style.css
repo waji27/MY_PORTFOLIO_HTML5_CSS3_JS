@@ -636,18 +636,6 @@ header h6 {
         flex-direction: column;
     }
 
-    #projects-bar .cards a .card-1 p {
-        padding: 0%;
-    }
-
-    #projects-bar .cards a .card-2 p {
-        padding: 0%;
-    }
-
-    #projects-bar .cards a .card-3 p {
-        padding: 0%;
-    }
-
     #my-team-bar {
         margin-left: 0%;
     }
