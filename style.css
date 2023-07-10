@@ -260,6 +260,21 @@ header h6 {
 
 #projects-bar .cards a .card-1 p {
     padding: 0.5em;
+    margin: 1em 0.5em;
+    text-align: center;
+    overflow: hidden;
+}
+
+#projects-bar .cards a .card-2 p {
+    padding: 0.5em;
+    margin: 1em 0.5em;
+    text-align: center;
+    overflow: hidden;
+}
+
+#projects-bar .cards a .card-3 p {
+    padding: 0.5em;
+    margin: 1em 0.5em;
     text-align: center;
     overflow: hidden;
 }
