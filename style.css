@@ -259,7 +259,7 @@ header h6 {
 }
 
 #projects-bar .cards a .card-1 p {
-    padding: 0.5em auto;
+    padding: 0.5em;
     text-align: center;
     overflow: hidden;
 }
