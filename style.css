@@ -255,6 +255,7 @@ header h6 {
     height: 200px;
     width: 200px;
     border: 2px solid white;
+    border-radius: 7px;
     color: white;
 }
 
@@ -283,13 +284,18 @@ header h6 {
     height: 200px;
     width: 200px;
     border: 2px solid white;
+    border-radius: 7px;
     color: white;
 }
 
 #projects-bar .cards a .card-2 .card-2-image {
-    border: 2px solid white;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 90px;
     margin: 10px;
+    background-color: white;
 }
 
 #projects-bar .cards a .card-2 h5 {
@@ -307,13 +313,18 @@ header h6 {
     height: 200px;
     width: 200px;
     border: 2px solid white;
+    border-radius: 7px;
     color: white;
 }
 
 #projects-bar .cards a .card-3 .card-3-image {
-    border: 2px solid white;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 90px;
     margin: 10px;
+    background-color: white;
 }
 
 #projects-bar .cards a .card-3 h5 {
