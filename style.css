@@ -732,6 +732,18 @@ header h6 {
         flex-direction: column;
     }
 
+    #projects-bar .cards a .card-1 {
+        height: 250px;
+    }
+
+    #projects-bar .cards a .card-2 {
+        height: 250px;
+    }
+
+    #projects-bar .cards a .card-3 {
+        height: 250px;
+    }
+
     #my-team-bar {
         margin-left: 0%;
     }
