@@ -51,28 +51,35 @@ header {
 }
 
 header h1 {
-    margin-top: 10px;
-    color: white;
+    padding: 12px 48px;
+    color: #fff;
+    background: linear-gradient(to right, #4d4d4d 0, #fff 10%, #4d4d4d 20%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    font-weight: 600;
     font-size: 50px;
-    animation: dullbright 2s infinite;
+    text-decoration: none;
+    white-space: nowrap;
 }
+
+@keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 400px;
+    }
+    100% {
+      background-position: 400px;
+    }
+  }
 
 header h6 {
     color: white;
-}
-
-@keyframes dullbright {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.5;
-    }
-
-    100% {
-        opacity: 1;
-    }
 }
 
 /* .......................................................................... */
@@ -532,13 +539,13 @@ header h6 {
     cursor: pointer;
 }
 
-.phone-nav{
+.phone-nav {
     display: none;
 }
 
 /* .......................................................................... */
 
-@media screen and (min-width: 767px) and (max-width: 1024px){
+@media screen and (min-width: 767px) and (max-width: 1024px) {
 
     header {
         background: url(/images/main-image.jpeg) no-repeat center top;
@@ -794,7 +801,7 @@ header h6 {
         transition: 0.5s;
     }
 
-    .phone-nav span:nth-child(2){
+    .phone-nav span:nth-child(2) {
         margin-top: -30px;
     }
 
@@ -806,16 +813,16 @@ header h6 {
         transition: 0.5%;
     }
 
-    .phone-nav input:checked~ span:nth-child(2){
+    .phone-nav input:checked~span:nth-child(2) {
         transform: rotate(45deg);
     }
 
-    .phone-nav input:checked~ span:nth-child(3){
+    .phone-nav input:checked~span:nth-child(3) {
         transform: rotate(-45deg);
         margin-top: -5px;
     }
 
-    .phone-nav input:checked~ span:nth-child(4){
+    .phone-nav input:checked~span:nth-child(4) {
         display: none;
     }
 
@@ -841,4 +848,76 @@ header h6 {
         cursor: pointer;
     }
 
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+#bodybody {
+    display: none;
 }

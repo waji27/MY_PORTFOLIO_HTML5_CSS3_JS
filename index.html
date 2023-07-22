@@ -13,7 +13,10 @@
     <title>WADJAN AKMAL</title>
 </head>
 
-<body>
+
+<body onload="settimefunction()">
+
+<div style="display:none;" id="bodybody" class="animate-bottom">
 
     <div class="phone-nav">
         <input type="checkbox">
@@ -53,19 +56,20 @@
 
     <div id="about-bar">
         <h3>About me</h3>
-        <p>Assalaam-o-aliakum !  <br> <br>
+        <p>Assalaam-o-aliakum ! <br> <br>
             I am a dedicated and ambitious student currently pursuing a Bachelor of Computer Science degree.
             With a passion for learning and exploring the vast field of technology, I continuously strive to enhance my
             knowledge and skills. <br> <br>
 
-            While my primary focus has been on my programming journey, I have actively participated in college projects, where I have collaborated with my peers to
+            While my primary focus has been on my programming journey, I have actively participated in college projects,
+            where I have collaborated with my peers to
             develop innovative solutions. These experiences have not only improved my technical abilities but also
             taught me the importance of teamwork, problem-solving, and project management.<br> <br>
 
             In addition, I have also gained valuable practical experience. As
             a private tutor, I have had the privilege of imparting knowledge and mentoring students in various subjects.
             This experience has honed my communication and leadership skills while nurturing a sense of responsibility
-            and adaptability. 
+            and adaptability.
             <br> <br>
 
             I am open to new opportunities, internships, and projects that can further expand my horizons and allow me
@@ -140,11 +144,11 @@
     </div>
 
     <!-- ...................................................................... -->
-    
+
     <div id="my-team-bar">
 
         <h2>My Team</h2>
-        
+
         <div class="team-members">
             <div class="ali">
                 <div class="ali-image"><img src="/images/ali.jpeg" height="80px" width="80px" alt=""></div>
@@ -189,14 +193,29 @@
             <input type="submit" id="submit-button">
         </form>
     </div>
-    
+
     <!-- ...................................................................... -->
-    
+
     <div class="my-reputation"></div>
 
     <!-- ...................................................................... -->
 
     <footer></footer>
+
+</div>
+
+    <div id="loader"></div>
+
+    <script>
+        function settimefunction() {
+            var myVar = setTimeout(showPage, 1500);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("bodybody").style.display = "block";
+        }
+    </script>
 
 </body>
 
