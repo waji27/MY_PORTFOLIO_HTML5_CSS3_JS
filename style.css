@@ -850,71 +850,112 @@ header h6 {
 
 }
 
-#loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    width: 120px;
-    height: 120px;
-    margin: -76px 0 0 -76px;
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #3498db;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
+/* ........................ loader  ............................ */
+
+#loader{
+    /* border: 2px solid green; */
+    height: 300px;
+    width: 300px;
+    margin: 10% auto;
+    display: flex;
+    flex-direction:row ;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
+#loader div {
+    border: 2px solid green;
+    border-radius: 30px;
+    height: 80px;
+    width: 10px;
+    background-color: white;
+    color: white;
 }
 
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
+#loader div:nth-child(1){
+    height: 80px;
+    width: 10px;
+    transform: rotate(-20deg);
+    animation: anima1 3s;
+    z-index: 4;
+}
+#loader div:nth-child(2){
+    height: 60px;
+    width: 10px;
+    transform: rotate(20deg);
+    animation: anima2 3s ;
+    z-index: 3;
 
-    100% {
-        transform: rotate(360deg);
-    }
+}
+#loader div:nth-child(3){
+    height: 60px;
+    width: 10px;
+    transform: rotate(-20deg);
+    animation: anima3 3s ;
+    z-index: 2;
+
+}
+#loader div:nth-child(4){
+    height: 80px;
+    width: 10px;
+    transform: rotate(20deg);
+    animation: anima4 3s ;
+    z-index: 2;
+
 }
 
-/* Add animation to "page content" */
-.animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s
-}
-
-@-webkit-keyframes animatebottom {
-    from {
-        bottom: -100px;
-        opacity: 0
+@keyframes anima1 {
+    0%{
+        transform: rotate(-120deg);
     }
+    50%{
+        transform: rotate(-240deg);
 
-    to {
-        bottom: 0px;
-        opacity: 1
+    }
+    100%{
+        transform: rotate(-20deg);
+
     }
 }
-
-@keyframes animatebottom {
-    from {
-        bottom: -100px;
-        opacity: 0
+@keyframes anima2 {
+    0%{
+        transform: rotate(-120deg);
     }
+    50%{
+        transform: rotate(-240deg);
 
-    to {
-        bottom: 0;
-        opacity: 1
+    }
+    100%{
+        transform: rotate(20deg);
+
+    }
+}
+@keyframes anima3 {
+    0%{
+        transform: rotate(-120deg);
+    }
+    50%{
+        transform: rotate(-240deg);
+
+    }
+    100%{
+        transform: rotate(-20deg);
+
+    }
+}
+@keyframes anima4 {
+    0%{
+        transform: rotate(-120deg);
+    }
+    50%{
+        transform: rotate(-240deg);
+
+    }
+    100%{
+        transform: rotate(20deg);
+
+
     }
 }
 
