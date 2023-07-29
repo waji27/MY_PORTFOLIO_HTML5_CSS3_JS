@@ -183,6 +183,20 @@ header h6 {
     background-color: #27242dac;
 }
 
+#skills-bar .bootstrap-skill {
+    height: 5px;
+    width: 800px;
+    background-color: white;
+    margin: 5px auto 20px auto;
+    border-radius: 10px;
+}
+
+#skills-bar .bootstrap-skill-val {
+    height: 5px;
+    width: 400px;
+    background-color: #27242dac;
+}
+
 #skills-bar .react-skill {
     height: 5px;
     width: 800px;
@@ -344,6 +358,29 @@ header h6 {
     margin: 0.5em 0.5em;
     text-align: center;
     overflow: hidden;
+}
+
+.smorebprjcts{
+display: inline-block;
+border: 2px solid white !important;
+padding: 10px;
+background: transparent;
+color: white;
+text-decoration: none;
+margin: 10vh;
+}
+
+.smorebprjcts select{
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+
+.smorebprjcts select option {
+    background:black;
+    color: white;
+    text-decoration: none;
 }
 
 /* ........................................................................... */
@@ -544,6 +581,64 @@ header h6 {
     display: none;
 }
 
+/* ............................ FOOTER .......................... */
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    margin-left: 12vw;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .top-section {
+    text-align: center;
+    margin-bottom: 10px;
+ }
+ 
+ .social-section {
+    text-align: center;
+ }
+ 
+ ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ li {
+    margin-right: 10px;
+    display: inline;
+ }
+ 
+ a {
+    color: #fff;
+ }
+ 
+ .fa-facebook {
+    color: #3b5998;
+ }
+ 
+ .fa-linkedin {
+    color: #0077b5;
+ }
+ 
+ .fa-instagram {
+    color: #e4405f;
+ }
+ 
+ .fa-github {
+    color: #333;
+ }
+ 
+ .fa-youtube {
+    color: #cd201f;
+ }
+
 /* .......................................................................... */
 
 @media screen and (min-width: 767px) and (max-width: 1024px) {
@@ -577,7 +672,7 @@ header h6 {
 
     #skills-bar .css-skill-val {
         height: 5px;
-        width: 73%;
+        width: 90%;
         background-color: #27242dac;
     }
 
@@ -591,7 +686,7 @@ header h6 {
 
     #skills-bar .javascript-skill-val {
         height: 5px;
-        width: 30%;
+        width: 50%;
         background-color: #27242dac;
     }
 
@@ -604,6 +699,20 @@ header h6 {
     }
 
     #skills-bar .php-skill-val {
+        height: 5px;
+        width: 250px;
+        background-color: #27242dac;
+    }
+
+    #skills-bar .bootstrap-skill {
+        height: 5px;
+        width: 500px;
+        background-color: white;
+        margin: 5px auto 20px auto;
+        border-radius: 10px;
+    }
+
+    #skills-bar .bootstrap-skill-val {
         height: 5px;
         width: 300px;
         background-color: #27242dac;
@@ -619,7 +728,7 @@ header h6 {
 
     #skills-bar .react-skill-val {
         height: 5px;
-        width: 30%;
+        width: 300px;
         background-color: #27242dac;
     }
 
@@ -638,8 +747,9 @@ header h6 {
     }
 
 }
+ 
 
-/* .......................................................................... */
+/* .......................FOR PHONE SCREEN................................. */
 
 @media screen and (max-width: 767px) {
     nav {
@@ -713,7 +823,21 @@ header h6 {
 
     #skills-bar .php-skill-val {
         height: 5px;
+        width: 150px;
+        background-color: #27242dac;
+    }
+
+    #skills-bar .bootstrap-skill {
+        height: 5px;
         width: 300px;
+        background-color: white;
+        margin: 5px auto 20px auto;
+        border-radius: 10px;
+    }
+
+    #skills-bar .bootstrap-skill-val {
+        height: 5px;
+        width: 180px;
         background-color: #27242dac;
     }
 
@@ -727,7 +851,7 @@ header h6 {
 
     #skills-bar .react-skill-val {
         height: 5px;
-        width: 30%;
+        width: 180px;
         background-color: #27242dac;
     }
 
