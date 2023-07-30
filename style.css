@@ -7,7 +7,6 @@
 body {
     font-family: monospace;
     background-color: black;
-    overflow-x: hidden;
 }
 
 /* .......................................................................... */
@@ -49,10 +48,11 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* border: 2px solid white; */
+
 }
 
 header h1 {
-    padding: 12px 48px;
     color: #fff;
     background: linear-gradient(to right, #4d4d4d 0, #fff 10%, #4d4d4d 20%);
     background-position: 0;
@@ -67,20 +67,22 @@ header h1 {
     white-space: nowrap;
 }
 
+header h6 {
+    color:white
+}
+
 @keyframes shine {
     0% {
-      background-position: 0;
+        background-position: 0;
     }
-    60% {
-      background-position: 400px;
-    }
-    100% {
-      background-position: 400px;
-    }
-  }
 
-header h6 {
-    color: white;
+    60% {
+        background-position: 400px;
+    }
+
+    100% {
+        background-position: 400px;
+    }
 }
 
 /* .......................................................................... */
@@ -91,6 +93,8 @@ header h6 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* border: 2px solid white; */
+
 }
 
 #about-bar h3 {
@@ -114,6 +118,8 @@ header h6 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* border: 2px solid white; */
+
 }
 
 #skills-bar h2 {
@@ -360,17 +366,17 @@ header h6 {
     overflow: hidden;
 }
 
-.smorebprjcts{
-display: inline-block;
-border: 2px solid white !important;
-padding: 10px;
-background: transparent;
-color: white;
-text-decoration: none;
-margin: 10vh;
+.smorebprjcts {
+    display: inline-block;
+    border: 2px solid white !important;
+    padding: 10px;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    margin: 10vh;
 }
 
-.smorebprjcts select{
+.smorebprjcts select {
     background: transparent;
     color: white;
     text-decoration: none;
@@ -378,7 +384,7 @@ margin: 10vh;
 }
 
 .smorebprjcts select option {
-    background:black;
+    background: black;
     color: white;
     text-decoration: none;
 }
@@ -593,53 +599,53 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
- }
- 
- .top-section {
+}
+
+.top-section {
     text-align: center;
     margin-bottom: 10px;
- }
- 
- .social-section {
+}
+
+.social-section {
     text-align: center;
- }
- 
- ul {
+}
+
+.social-section ul {
     list-style: none;
     margin: 0;
     padding: 0;
- }
- 
- li {
+}
+
+.social-section ul li {
     margin-right: 10px;
     display: inline;
- }
- 
- a {
-    color: #fff;
- }
- 
- .fa-facebook {
-    color: #3b5998;
- }
- 
- .fa-linkedin {
-    color: #0077b5;
- }
- 
- .fa-instagram {
-    color: #e4405f;
- }
- 
- .fa-github {
-    color: #333;
- }
- 
- .fa-youtube {
-    color: #cd201f;
- }
+}
 
-/* .......................................................................... */
+a {
+    color: #fff;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-linkedin {
+    color: #0077b5;
+}
+
+.fa-instagram {
+    color: #e4405f;
+}
+
+.fa-github {
+    color: #333;
+}
+
+.fa-youtube {
+    color: #cd201f;
+}
+
+/* ........................tab screens................................ */
 
 @media screen and (min-width: 767px) and (max-width: 1024px) {
 
@@ -747,7 +753,7 @@ footer {
     }
 
 }
- 
+
 
 /* .......................FOR PHONE SCREEN................................. */
 
@@ -897,6 +903,10 @@ footer {
         margin-left: 0%;
     }
 
+    #footer-bar {
+        margin: 0%;
+    }
+
     /* ...................phone nav ..................... */
 
     .phone-nav {
@@ -952,9 +962,10 @@ footer {
     }
 
     .phone-nav input:checked~.phone-nav-menu {
-        margin-top: 2em;
+        margin-top: 3em;
+        padding: 1em;
         width: 400px;
-        /* border: 2px solid white; */
+        border: 2px solid white;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -977,13 +988,13 @@ footer {
 
 /* ........................ loader  ............................ */
 
-#loader{
+#loader {
     /* border: 2px solid green; */
     height: 300px;
     width: 300px;
     margin: 10% auto;
     display: flex;
-    flex-direction:row ;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 10px;
@@ -998,86 +1009,100 @@ footer {
     color: white;
 }
 
-#loader div:nth-child(1){
+#loader div:nth-child(1) {
     height: 80px;
     width: 10px;
     transform: rotate(-20deg);
     animation: anima1 3s;
     z-index: 4;
 }
-#loader div:nth-child(2){
+
+#loader div:nth-child(2) {
     height: 60px;
     width: 10px;
     transform: rotate(20deg);
-    animation: anima2 3s ;
+    animation: anima2 3s;
     z-index: 3;
 
 }
-#loader div:nth-child(3){
+
+#loader div:nth-child(3) {
     height: 60px;
     width: 10px;
     transform: rotate(-20deg);
-    animation: anima3 3s ;
+    animation: anima3 3s;
     z-index: 2;
 
 }
-#loader div:nth-child(4){
+
+#loader div:nth-child(4) {
     height: 80px;
     width: 10px;
     transform: rotate(20deg);
-    animation: anima4 3s ;
+    animation: anima4 3s;
     z-index: 2;
 
 }
 
 @keyframes anima1 {
-    0%{
+    0% {
         transform: rotate(-120deg);
     }
-    50%{
+
+    50% {
         transform: rotate(-240deg);
 
     }
-    100%{
+
+    100% {
         transform: rotate(-20deg);
 
     }
 }
+
 @keyframes anima2 {
-    0%{
+    0% {
         transform: rotate(-120deg);
     }
-    50%{
+
+    50% {
         transform: rotate(-240deg);
 
     }
-    100%{
+
+    100% {
         transform: rotate(20deg);
 
     }
 }
+
 @keyframes anima3 {
-    0%{
+    0% {
         transform: rotate(-120deg);
     }
-    50%{
+
+    50% {
         transform: rotate(-240deg);
 
     }
-    100%{
+
+    100% {
         transform: rotate(-20deg);
 
     }
 }
+
 @keyframes anima4 {
-    0%{
+    0% {
         transform: rotate(-120deg);
     }
-    50%{
+
+    50% {
         transform: rotate(-240deg);
 
     }
-    100%{
+
+    100% {
         transform: rotate(20deg);
 
 
