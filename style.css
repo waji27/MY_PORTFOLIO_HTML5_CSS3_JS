@@ -125,7 +125,7 @@ header h6 {
 #skills-bar h2 {
     color: white;
     border-bottom: 2px solid white;
-    margin: 50px auto 20px auto;
+    margin: 20px auto 20px auto;
     font-size: 30px;
 }
 
@@ -245,6 +245,11 @@ header h6 {
     cursor: pointer;
 }
 
+hr{
+    margin: 10vh 0vw 10vh 12vw;
+    color: white;
+    opacity: 0.5;
+}
 
 /* .......................................................................... */
 
@@ -258,7 +263,7 @@ header h6 {
 }
 
 #projects-bar h2 {
-    margin: 50px auto 30px auto;
+    margin: 20px auto 30px auto;
     font-size: 30px;
     color: white;
     border-bottom: 2px solid white;
@@ -411,7 +416,7 @@ header h6 {
 #my-team-bar h2 {
     color: white;
     border-bottom: 2px solid white;
-    margin: 50px auto 20px auto;
+    margin: 20px auto 20px auto;
     font-size: 30px;
 }
 
@@ -543,7 +548,7 @@ header h6 {
 #contact-bar h2 {
     color: white;
     border-bottom: 2px solid white;
-    margin: 50px auto 20px auto;
+    margin: 20px auto 20px auto;
     font-size: 30px;
 }
 
