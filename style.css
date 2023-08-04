@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@100&display=swap');
+
 * {
     margin: 0%;
     padding: 0%;
@@ -5,11 +7,12 @@
 }
 
 body {
-    font-family: monospace;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     background-color: black;
 }
 
-/* .......................................................................... */
+/* .....................................navbar-left-area..................................... */
 
 nav {
     background-color: #27242dac;
@@ -38,7 +41,7 @@ nav ul a:hover {
     background-color: black;
 }
 
-/* .......................................................................... */
+/* .....................................header-right-area..................................... */
 
 header {
     background: url(/images/main-image.jpeg) no-repeat center top;
@@ -62,9 +65,10 @@ header h1 {
     animation-fill-mode: forwards;
     -webkit-text-size-adjust: none;
     font-weight: 600;
-    font-size: 50px;
+    font-size: 40px;
     text-decoration: none;
     white-space: nowrap;
+    margin: 3vh auto;
 }
 
 header h6 {
@@ -85,7 +89,7 @@ header h6 {
     }
 }
 
-/* .......................................................................... */
+/* ..................................about-bar-right-area........................................ */
 
 #about-bar {
     margin-left: 12vw;
@@ -110,7 +114,7 @@ header h6 {
     text-align: center;
 }
 
-/* .......................................................................... */
+/* .......................................skills-bar-right-area................................... */
 
 #skills-bar {
     margin-left: 12vw;
@@ -251,7 +255,7 @@ hr{
     opacity: 0.5;
 }
 
-/* .......................................................................... */
+/* .................................projects-bar-right-area......................................... */
 
 #projects-bar {
     margin-left: 12vw;
@@ -290,12 +294,16 @@ hr{
     border: 2px solid white;
     border-radius: 7px;
     color: white;
+    overflow-y: auto;
+}
+
+.card-1::-webkit-scrollbar{
+    display: none;
 }
 
 #projects-bar .cards a .card-1 p {
     margin: 0.5em 0.5em;
     text-align: center;
-    overflow: hidden;
 }
 
 #projects-bar .cards a .card-1 h5 {
@@ -319,6 +327,12 @@ hr{
     border: 2px solid white;
     border-radius: 7px;
     color: white;
+    overflow-y: auto;
+
+}
+
+.card-2::-webkit-scrollbar{
+    display: none;
 }
 
 #projects-bar .cards a .card-2 .card-2-image {
@@ -348,6 +362,11 @@ hr{
     border: 2px solid white;
     border-radius: 7px;
     color: white;
+    overflow-y: auto;
+}
+
+.card-3::-webkit-scrollbar{
+    display: none;
 }
 
 #projects-bar .cards a .card-3 .card-3-image {
@@ -394,7 +413,7 @@ hr{
     text-decoration: none;
 }
 
-/* ........................................................................... */
+/* ...............................my-team-bar-right-area............................................ */
 
 #my-team-bar {
     margin-left: 12vw;
@@ -534,7 +553,7 @@ hr{
     text-align: center;
 }
 
-/* ........................................................................... */
+/* .............................contact-bar-right-area.............................................. */
 
 #contact-bar {
     margin-left: 12vw;
@@ -592,7 +611,7 @@ hr{
     display: none;
 }
 
-/* ............................ FOOTER .......................... */
+/* ............................ FOOTER-right-area .......................... */
 
 footer {
     background-color: black;
@@ -602,8 +621,9 @@ footer {
     /* border: 2px solid white; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    gap: 2vh;
 }
 
 .top-section {
@@ -912,7 +932,11 @@ a {
         margin: 0%;
     }
 
-    /* ...................phone nav ..................... */
+    hr{
+        margin: 3vh 0%;
+    }
+
+    /* ................... phone nav ..................... */
 
     .phone-nav {
         position: relative;
@@ -997,7 +1021,7 @@ a {
     /* border: 2px solid green; */
     height: 300px;
     width: 300px;
-    margin: 10% auto;
+    margin: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
