@@ -61,11 +61,11 @@ header h1 {
     background-position: 0;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: shine 3s infinite linear;
+    animation: shine 5s infinite linear;
     animation-fill-mode: forwards;
     -webkit-text-size-adjust: none;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 50px;
     text-decoration: none;
     white-space: nowrap;
     margin: 3vh auto;
@@ -81,11 +81,11 @@ header h6 {
     }
 
     60% {
-        background-position: 400px;
+        background-position: 200px;
     }
 
     100% {
-        background-position: 400px;
+        background-position: 300px;
     }
 }
 
