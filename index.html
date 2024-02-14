@@ -38,7 +38,7 @@
 
       <nav>
         <ul>
-          <a href="index.html"
+          <a href="#home-bar"
             ><span class="material-symbols-outlined">roofing</span> Home</a
           >
           <a href="#about-bar"
@@ -54,19 +54,13 @@
           <a href="#contact-bar"
             ><span class="material-symbols-outlined">contacts</span> Contact</a
           >
-          <a href="#contact-bar"
-            ><span class="material-symbols-outlined">contacts</span> My Team</a
-          >
-          <a href="#contact-bar"
-            ><span class="material-symbols-outlined">contacts</span> My Rates</a
-          >
         </ul>
       </nav>
 
       <!-- ........................header .................................. -->
 
-      <header>
-        <img height="300px" width="300px" src="/assets/profile2.jpg" alt="" />
+      <header id="home-bar">
+        <img height="300px" width="300px" src="./assets/profile.jpg" alt="" />
         <div class="display-flex">
           <h1>WAJDAN AKMAL</h1>
           <h3>Web Developer</h3>
@@ -79,34 +73,23 @@
         <h3>About me</h3>
         <div id="lineh2"></div>
         <p>
-          Assalaam-o-aliakum ! <br />
+          Hello there! I'm Wajdan, web developer at Bits&Bytes. It's a pleasure
+          to have you here.
           <br />
-          I am a dedicated and ambitious student currently pursuing a Bachelor
-          of Computer Science degree. With a passion for learning and exploring
-          the vast field of technology, I continuously strive to enhance my
-          knowledge and skills. <br />
-          <br />
+          Me and my team are offering impressive and satisfied web developing
+          services at very reasonable rates which is the main purpose of this
+          portfolio.
+        </p>
+        <br /><br />
 
-          While my primary focus has been on my programming journey, I have
-          actively participated in college projects, where I have collaborated
-          with my peers to develop innovative solutions. These experiences have
-          not only improved my technical abilities but also taught me the
-          importance of teamwork, problem-solving, and project management.<br />
-          <br />
-
-          In addition, I have also gained valuable practical experience. As a
-          private tutor, I have had the privilege of imparting knowledge and
-          mentoring students in various subjects. This experience has honed my
-          communication and leadership skills while nurturing a sense of
-          responsibility and adaptability.
-          <br />
-          <br />
-
-          I am open to new opportunities, internships, and projects that can
-          further expand my horizons and allow me to make a positive impact. If
-          you are seeking a motivated and dedicated individual with a thirst for
-          knowledge in the field of computer science, I would be delighted to
-          connect with you. <br />
+        <h4>Why Choose Us?</h4>
+        <p>
+          With years of experience in the industry, we possess the knowledge and
+          skills to tackle projects of any scale or complexity. We stay updated
+          with the latest trends and technologies to ensure your website stands
+          out in today's competitive digital landscape. Your satisfaction is our
+          priority. We go the extra mile to ensure that your expectations are
+          not just met but exceeded.
         </p>
       </div>
 
@@ -137,13 +120,13 @@
         <div class="bootstrap-skill">
           <div class="bootstrap-skill-val"></div>
         </div>
-        <h3>React</h3>
+        <h3>React JS</h3>
         <div class="react-skill">
           <div class="react-skill-val"></div>
         </div>
-        <h3>English</h3>
-        <div class="english-skill">
-          <div class="english-skill-val"></div>
+        <h3>Express JS</h3>
+        <div class="express-skill">
+          <div class="express-skill-val"></div>
         </div>
         <a href="/images/my reume.pdf" id="resume-button" download
           >Download Resume</a
@@ -154,7 +137,7 @@
 
       <!-- ......................projects-bar............................... -->
 
-      <div id="projects-bar">
+      <!-- <div id="projects-bar">
         <h2>My Projects</h2>
         <div id="lineh2"></div>
         <div class="cards">
@@ -230,8 +213,127 @@
             <a href=""><option value="">Sir Faisal Assignment</option></a>
           </select>
         </div>
-      </div>
+      </div> -->
 
+      <div
+        id="projects-bar"
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+        "
+      >
+        <div
+          class="left-bar"
+          style="
+            color: white;
+            width: 70%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: baseline;
+            padding: 3em;
+            gap: 1em;
+            margin-left: 4em;
+          "
+        >
+          <h1>Decomposer</h1>
+          <p style="border-left: 1px solid white; padding: 1em">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            mollitia perferendis eaque porro in? Doloribus explicabo at minima
+            dolor molestiae recusandae accusantium quidem itaque perferendis
+            alias ad iure inventore expedita maxime soluta beatae libero ab eos,
+            pariatur repellendus dicta vero dolorum corporis dolorem! Debitis
+            voluptatum porro et sed. Laborum, quibusdam.
+          </p>
+          <ul
+            style="
+              width: 100%;
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              list-style: none;
+              gap: 0.5em;
+            "
+          >
+            <li>view site</li>
+            <li>github</li>
+          </ul>
+        </div>
+
+        <div
+          class="right-bar"
+          style="
+            color: white;
+            width: 30%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 1em;
+            margin-right: 2em;
+          "
+        >
+          <h1>Projects</h1>
+          <ul
+            style="
+              list-style: none;
+              display: flex;
+              flex-direction: column;
+              gap: 0.5em;
+            "
+          >
+            <li
+              style="
+                border-bottom: 1px solid white;
+                padding: 0.4em;
+                cursor: pointer;
+              "
+            >
+              AL-NAZ Biryani Shop
+            </li>
+            <li
+              style="
+                border-bottom: 1px solid white;
+                padding: 0.4em;
+                cursor: pointer;
+              "
+            >
+              College Portal
+            </li>
+            <li
+              style="
+                border-bottom: 1px solid white;
+                padding: 0.4em;
+                cursor: pointer;
+              "
+            >
+              Multi-Calculator
+            </li>
+            <li
+              style="
+                border-bottom: 1px solid white;
+                padding: 0.4em;
+                cursor: pointer;
+              "
+            >
+              E-Commerce Store
+            </li>
+            <li
+              style="
+                border-bottom: 1px solid white;
+                padding: 0.4em;
+                cursor: pointer;
+              "
+            >
+              Social Media App
+            </li>
+          </ul>
+        </div>
+      </div>
       <hr />
 
       <!-- ........................my-team-bar.................................. -->
@@ -288,12 +390,46 @@
       <div id="contact-bar">
         <h2>My Contact</h2>
         <div id="lineh2"></div>
-        <h5>My Personal Phone no :</h5>
-        <p>+92 307 0177697</p>
-        <h5>My Email Address :</h5>
-        <p>wajdanakmal37@gmail.com</p>
-        <h5>My Location :</h5>
-        <p>Bahawalpur-Punjab-Pakistan</p>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+            margin-top: 0.5em;
+          "
+        >
+          <span class="material-symbols-outlined" style="color: white"
+            >call</span
+          >
+          <p>+92 307 0177697</p>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+          "
+        >
+          <span class="material-symbols-outlined" style="color: white"
+            >mail</span
+          >
+          <p>wajdanakmal37@gmail.com</p>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+          "
+        >
+          <span class="material-symbols-outlined" style="color: white"
+            >location_on</span
+          >
+          <p>Bahawalpur-Punjab-Pakistan</p>
+        </div>
         <h2>To send me a Message</h2>
         <form action="">
           <input type="text" placeholder="Enter Your Name" />
@@ -306,7 +442,8 @@
         <div class="social-section">
           <ul>
             <li>
-              <a href="https://www.facebook.com"
+              <a
+                href="https://www.facebook.com/wajdan.akmal.906?mibextid=ZbWKwL"
                 ><i class="fab fa-facebook"></i
               ></a>
             </li>
@@ -317,15 +454,18 @@
               ></a>
             </li>
             <li>
-              <a href="https://www.instagram.com"
+              <a
+                href="https://www.instagram.com/wajdan_akmal?igsh=a2FhamUxbHI5dTQ0"
                 ><i class="fab fa-instagram"></i
               ></a>
             </li>
             <li>
-              <a href="https://www.github.com"><i class="fab fa-github"></i></a>
+              <a href="https://github.com/waji27"
+                ><i class="fab fa-github"></i
+              ></a>
             </li>
             <li>
-              <a href="https://www.youtube.com"
+              <a href="https://youtube.com/@wajdanakmal8325?si=26R0r7J21UXg37RP"
                 ><i class="fab fa-youtube"></i
               ></a>
             </li>
@@ -337,17 +477,13 @@
 
       <div class="my-reputation-bar"></div>
 
-      <hr />
-
       <!-- ........................footer....................................... -->
 
       <footer>
-        <div class="top-section">
-          <p>
-            &copy;2023 Copyright:
-            <a href="index.html">Wadjanakmal.netlify.app</a>
-          </p>
-        </div>
+        <p>
+          &copy;2023 Copyright:
+          <a href="index.html">Wadjanakmal.netlify.app</a>
+        </p>
       </footer>
     </div>
 

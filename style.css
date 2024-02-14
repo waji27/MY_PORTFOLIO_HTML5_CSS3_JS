@@ -19,7 +19,13 @@ body {
   justify-content: center;
 }
 
-/* .....................................navbar-left-area..................................... */
+#lineh2 {
+  height: 0.25em;
+  background: #27242dac;
+  animation: lineH 3s 0.5s infinite linear;
+}
+
+/* ...............................navbar-left-area.............................. */
 
 nav {
   background-color: #27242dac;
@@ -48,10 +54,14 @@ nav ul a {
 }
 
 nav ul a:hover {
+  scale: 1.5;
+}
+
+nav ul a:hover {
   background-color: black;
 }
 
-/* .....................................header-right-area..................................... */
+/* ...............................header-right-area.......................... */
 
 header {
   width: 85vw;
@@ -66,8 +76,9 @@ header {
 }
 
 header h1 {
-  color: #27242dac;
-  background: linear-gradient(to right, #27242dac 0, #fff 10%, #27242dac 20%);
+  /* color: #27242dac; */
+  color: white;
+  background: linear-gradient(to right, #27242dac 0, white 20%, #27242dac 20%);
   background-position: 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -82,7 +93,8 @@ header h1 {
 }
 
 header h3 {
-  color: #27242dac;
+  /* color: #27242dac; */
+  color: white;
 }
 
 @keyframes shine {
@@ -103,7 +115,7 @@ header img {
   /* border: #aa2b00 2px solid; */
   border-radius: 50%;
 }
-/* ..................................about-bar-right-area........................................ */
+/* ..................................about-bar-right-area............................ */
 
 #about-bar {
   margin-left: 12vw;
@@ -119,17 +131,23 @@ header img {
   /* border-bottom: 2px solid white; */
   font-size: 30px;
   color: white;
-margin-bottom: 0.5em;
+  margin-bottom: 1em;
+}
+
+#about-bar h4 {
+  color: white;
+  margin-bottom: -3em;
 }
 
 #about-bar p {
-  color: white;
   text-align: center;
   margin: 3em;
+  font-size: 1.5em;
   /* border: 2px solid white; */
+  color: white;
 }
 
-/* .......................................skills-bar-right-area................................... */
+/* ...................................skills-bar-right-area.......................... */
 
 #skills-bar {
   margin-left: 12vw;
@@ -191,7 +209,7 @@ margin-bottom: 0.5em;
 
 #skills-bar .javascript-skill-val {
   height: 5px;
-  width: 550px;
+  width: 700px;
   background-color: #27242dac;
 }
 
@@ -205,7 +223,7 @@ margin-bottom: 0.5em;
 
 #skills-bar .php-skill-val {
   height: 5px;
-  width: 300px;
+  width: 700px;
   background-color: #27242dac;
 }
 
@@ -219,7 +237,7 @@ margin-bottom: 0.5em;
 
 #skills-bar .bootstrap-skill-val {
   height: 5px;
-  width: 400px;
+  width: 650px;
   background-color: #27242dac;
 }
 
@@ -233,11 +251,11 @@ margin-bottom: 0.5em;
 
 #skills-bar .react-skill-val {
   height: 5px;
-  width: 300px;
+  width: 700px;
   background-color: #27242dac;
 }
 
-#skills-bar .english-skill {
+#skills-bar .express-skill {
   height: 5px;
   width: 800px;
   background-color: white;
@@ -245,7 +263,7 @@ margin-bottom: 0.5em;
   border-radius: 10px;
 }
 
-#skills-bar .english-skill-val {
+#skills-bar .express-skill-val {
   height: 5px;
   width: 650px;
   background-color: #27242dac;
@@ -257,6 +275,7 @@ margin-bottom: 0.5em;
   background: transparent;
   color: white;
   text-decoration: none;
+  margin-top: 1em;
 }
 
 #resume-button:hover {
@@ -287,7 +306,7 @@ hr {
   margin: 20px auto 30px auto;
   font-size: 30px;
   color: white;
-  /* border-bottom: 2px solid white; */
+  /* border: 2px solid white; */
 }
 
 #projects-bar .cards {
@@ -298,6 +317,7 @@ hr {
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
+  margin: 2em auto;
 }
 
 #projects-bar .cards a {
@@ -579,17 +599,18 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1em;
   height: 100vh;
 }
 
 #contact-bar h2 {
   color: white;
   /* border-bottom: 2px solid white; */
-  margin: 50px auto 20px auto;
+  margin: 1em auto 0em auto;
   font-size: 30px;
 }
 
-#lineh2 {
+#contact-bar #lineh2 {
   height: 0.25em;
   background: #27242dac;
   animation: lineH 3s 0.5s infinite linear;
@@ -650,25 +671,13 @@ hr {
 footer {
   background-color: black;
   color: #fff;
-  padding: 20px;
   margin-left: 12vw;
   /* border: 2px solid white; */
+  height: 20vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  gap: 2vh;
-}
-
-.top-section {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.social-section {
-  text-align: center;
-  margin-top: 1em;
-  /* border: 2px solid white; */
 }
 
 .social-section ul {
@@ -1047,7 +1056,7 @@ a {
   }
 }
 
-/* ........................ loader  ............................ */
+/* ........................ loader  ................................................. */
 
 #loader {
   /* border: 2px solid green; */
@@ -1062,11 +1071,11 @@ a {
 }
 
 #loader div {
-  border: 2px solid green;
+  border: 2px solid white;
   border-radius: 30px;
   height: 80px;
   width: 10px;
-  background-color: white;
+  background-color: #27242dac;
   color: white;
 }
 
