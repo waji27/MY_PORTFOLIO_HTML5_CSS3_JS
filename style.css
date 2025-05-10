@@ -73,12 +73,16 @@ header {
   justify-content: center;
   gap: 5em;
   /* border: 2px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 header h1 {
   /* color: #27242dac; */
   color: white;
-  background: linear-gradient(to right, #27242dac 0, white 20%, #27242dac 20%);
+  background: linear-gradient(to right, #27242dac 0, white 20%, white 20%);
   background-position: 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -86,7 +90,7 @@ header h1 {
   animation-fill-mode: forwards;
   -webkit-text-size-adjust: none;
   font-weight: 1900;
-  font-size: 65px;
+  font-size: 3em;
   text-decoration: none;
   white-space: nowrap;
   /* margin: 2em auto 1em auto; */
@@ -131,7 +135,7 @@ header img {
   /* border-bottom: 2px solid white; */
   font-size: 30px;
   color: white;
-  margin-bottom: 1em;
+  margin-bottom: -1em;
 }
 
 #about-bar h4 {
@@ -831,13 +835,14 @@ a {
 
   header {
     background: url(/images/main-image.jpeg) no-repeat center top;
-    height: 70vh;
+    height: 90vh;
     width: 100vw;
     margin-left: 0%;
   }
 
   #about-bar {
     margin-left: 0%;
+    margin-top: 10em;
   }
 
   #skills-bar {
@@ -923,6 +928,20 @@ a {
   }
 
   #skills-bar .react-skill-val {
+    height: 5px;
+    width: 180px;
+    background-color: #27242dac;
+  }
+
+  #skills-bar .express-skill {
+    height: 5px;
+    width: 300px;
+    background-color: white;
+    margin: 5px auto 20px auto;
+    border-radius: 10px;
+  }
+
+  #skills-bar .express-skill-val {
     height: 5px;
     width: 180px;
     background-color: #27242dac;
