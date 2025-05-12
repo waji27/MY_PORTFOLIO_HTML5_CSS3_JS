@@ -90,7 +90,7 @@ header h1 {
   animation-fill-mode: forwards;
   -webkit-text-size-adjust: none;
   font-weight: 1900;
-  font-size: 3em;
+  font-size: 2em;
   text-decoration: none;
   white-space: nowrap;
   /* margin: 2em auto 1em auto; */
@@ -159,7 +159,7 @@ header img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   /* border: 2px solid white; */
 }
 
@@ -303,7 +303,8 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
+  padding-top: 3em;
 }
 
 #projects-bar h2 {
@@ -811,6 +812,20 @@ a {
     background-color: #27242dac;
   }
 
+  #skills-bar .express-skill {
+    height: 5px;
+    width: 500px;
+    background-color: white;
+    margin: 5px auto 20px auto;
+    border-radius: 10px;
+  }
+
+  #skills-bar .express-skill-val {
+    height: 5px;
+    width: 300px;
+    background-color: #27242dac;
+  }
+
   #skills-bar .english-skill {
     height: 5px;
     width: 500px;
@@ -841,12 +856,15 @@ a {
   }
 
   #about-bar {
+    /* max-height: 80vh; */
     margin-left: 0%;
-    margin-top: 10em;
+    margin-top: 20em;
+    font-size: 0.7em;
   }
 
   #skills-bar {
     margin-left: 0%;
+    /* max-height: 80vh; */
   }
 
   #skills-bar .html-skill {
@@ -963,6 +981,8 @@ a {
 
   #projects-bar {
     margin-left: 0%;
+    /* max-height: 80vh; */
+    /* overflow: auto; */
   }
 
   #projects-bar .cards {
