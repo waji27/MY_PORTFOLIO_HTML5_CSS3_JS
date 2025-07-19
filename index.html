@@ -16,6 +16,30 @@
     <!-- adding css  -->
     <link rel="stylesheet" href="style.css" />
     <title>WAJDAN AKMAL</title>
+
+    <style>
+      #backToTopBtn {
+        display: none; /* Hidden by default */
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        z-index: 99; /* Stay on top */
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #007bff; /* Blue */
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s ease;
+      }
+
+      #backToTopBtn:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+      }
+    </style>
   </head>
 
   <body onload="settimefunction()">
@@ -503,6 +527,11 @@
       <div></div>
     </div>
 
+    <!-- Back to Top Button -->
+    <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">
+      ↑
+    </button>
+
     <!-- ...................javascript........................... -->
 
     <script>
@@ -513,6 +542,27 @@
       function showPage() {
         document.getElementById("loader").style.display = "none";
         document.getElementById("bodybody").style.display = "block";
+      }
+
+      // Show or hide the button based on scroll position
+      window.onscroll = function () {
+        const btn = document.getElementById("backToTopBtn");
+        if (
+          document.body.scrollTop > 300 ||
+          document.documentElement.scrollTop > 300
+        ) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      };
+
+      // Scroll to the top smoothly when button is clicked
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
       }
     </script>
   </body>
