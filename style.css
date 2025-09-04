@@ -1211,7 +1211,7 @@ a {
 }
 
 .animate-back-to-top {
-  animation: infinite;
+  animation: back-to-top 2s infinite;
 }
 
 @keyframes back-to-top {
