@@ -227,7 +227,7 @@ header img {
 
 #skills-bar .php-skill-val {
   height: 5px;
-  width: 700px;
+  width: 750px;
   background-color: #27242dac;
 }
 
@@ -294,7 +294,7 @@ hr {
   opacity: 0.5;
 }
 
-/* .................................projects-bar-right-area......................... */
+/* ..................... projects-bar-right-area......................... */
 
 #projects-bar {
   margin-left: 12vw;
@@ -454,7 +454,7 @@ hr {
   text-decoration: none;
 }
 
-/* ...................... my-team-bar-right-area..................................... */
+/* ...................... my-team-bar-right-area.......................... */
 
 #my-team-bar {
   margin-left: 12vw;
@@ -595,7 +595,7 @@ hr {
   text-align: center;
 }
 
-/* .............................contact-bar-right-area................................. */
+/* .............................contact-bar-right-area..................... */
 
 #contact-bar {
   /* border: 2px solid white; */
@@ -766,7 +766,7 @@ a {
 
   #skills-bar .javascript-skill-val {
     height: 5px;
-    width: 50%;
+    width: 85%;
     background-color: #27242dac;
   }
 
@@ -780,7 +780,7 @@ a {
 
   #skills-bar .php-skill-val {
     height: 5px;
-    width: 250px;
+    width: 90%;
     background-color: #27242dac;
   }
 
@@ -905,7 +905,7 @@ a {
 
   #skills-bar .javascript-skill-val {
     height: 5px;
-    width: 30%;
+    width: 85%;
     background-color: #27242dac;
   }
 
@@ -919,7 +919,7 @@ a {
 
   #skills-bar .php-skill-val {
     height: 5px;
-    width: 150px;
+    width: 90%;
     background-color: #27242dac;
   }
 
@@ -933,7 +933,7 @@ a {
 
   #skills-bar .bootstrap-skill-val {
     height: 5px;
-    width: 180px;
+    width: 80%;
     background-color: #27242dac;
   }
 
@@ -947,7 +947,7 @@ a {
 
   #skills-bar .react-skill-val {
     height: 5px;
-    width: 180px;
+    width: 80%;
     background-color: #27242dac;
   }
 
@@ -961,7 +961,7 @@ a {
 
   #skills-bar .express-skill-val {
     height: 5px;
-    width: 180px;
+    width: 70%;
     background-color: #27242dac;
   }
 
