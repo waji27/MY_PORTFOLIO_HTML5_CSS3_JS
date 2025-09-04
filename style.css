@@ -1209,3 +1209,25 @@ a {
 #bodybody {
   display: none;
 }
+
+.animate-back-to-top {
+  animation: infinite;
+}
+
+@keyframes back-to-top {
+  0% {
+    scale: 0.8;
+  }
+  25% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.2;
+  }
+  75% {
+    scale: 1;
+  }
+  100% {
+    scale: 0.8;
+  }
+}
